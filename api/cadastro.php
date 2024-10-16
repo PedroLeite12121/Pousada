@@ -35,8 +35,11 @@
                 $_SESSION["loggedin"] = true;
                 $_SESSION["name"] = $name;
 
-                header("Location: site.php"); 
-                exit;
+               if(isset($_SESSION["loggedin"])) {
+               header("Location: site.php"); 
+               exit;
+               }
+                
             }
             else {
                 $_SESSION['error'] = "Erro desconhecido";
