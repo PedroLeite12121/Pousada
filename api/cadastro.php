@@ -32,13 +32,11 @@
             $stmt->bind_param("sss", $name, $email, $hashed_password);
 
             if($stmt->execute()) {
-                $_SESSION["loggedin"] = true;
+               setcookie("loggedin", "true", time() + 3600, "/");
                 $_SESSION["name"] = $name;
 
-               if(isset($_SESSION["loggedin"])) {
                header("Location: site.php"); 
                exit;
-               }
                 
             }
             else {
