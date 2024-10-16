@@ -11,7 +11,7 @@
         exit;
     }
 
-    if($_SESSION["loggedin"] !== true) {
+    if(!isset($_COOKIE["loggedin"])) {
         header("Location: login.php");
         exit;
     }
