@@ -25,13 +25,13 @@
             $row = $result->fetch_assoc();
             //se existe algum, verifica se a senha bate
             if(password_verify($password, $row['senha'])) {
-                $_SESSION["loggedin"] = true;
+                setcookie("loggedin", "true", time() + 3600, "/");
                 $name = $row['nome'];
-                $_SESSION["name"] = $name;
-                if(isset($_SESSION["loggedin"])) {
+                setcookie("name", $name, time() + 3600, "/");
+                
                header("Location: site.php"); 
                exit;
-               }
+
                 exit;
             }
             else{
