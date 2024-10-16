@@ -3,6 +3,11 @@
         session_start();
     }
 
+    if($_COOKIE["loggedin"] === "true") {
+        header("Location: site.php");
+        exit;
+    }
+
     require_once "configuracoes.php";
 
 

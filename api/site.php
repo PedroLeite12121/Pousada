@@ -4,14 +4,19 @@
     }
 
     require_once "configuracoes.php";
+
     function logout() {
         session_unset();
         session_destroy();
+        unset($_COOKIE["loggedin"]);
+        unset($_COOKIE["name"]);
+        setcookie("loggedin", '', time() - 3600, '/'); 
+        setcookie("name", '', time() - 3600, '/'); 
         header("Location: login.php");
         exit;
     }
 
-    if(!isset($_COOKIE["loggedin"])) {
+    if($_COOKIE["loggedin"] !== "true") {
         header("Location: login.php");
         exit;
     }
