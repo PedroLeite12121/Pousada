@@ -28,7 +28,10 @@
                 $_SESSION["loggedin"] = true;
                 $name = $row['nome'];
                 $_SESSION["name"] = $name;
-                header("Location: site.php");
+                if(isset($_SESSION["loggedin"])) {
+               header("Location: site.php"); 
+               exit;
+               }
                 exit;
             }
             else{
