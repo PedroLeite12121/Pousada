@@ -33,7 +33,7 @@
 
             if($stmt->execute()) {
                setcookie("loggedin", "true", time() + 3600, "/");
-                $_SESSION["name"] = $name;
+               setcookie("name", $name, time() + 3600, "/");
 
                header("Location: site.php"); 
                exit;
