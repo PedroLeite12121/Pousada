@@ -1,0 +1,17 @@
+.container{
+    background-color: rgb(71, 71, 71) !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 0 !important; 
+    width: 100%;
+    min-width: 100%;
+    
+}
+
+.container div{
+    margin-right: 0 !important;
+}
+
+.pushFooter{
+    min-height: 100vh;
+}
