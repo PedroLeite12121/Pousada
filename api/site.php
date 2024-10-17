@@ -6,15 +6,15 @@
     require_once "configuracoes.php";
 
     function logout() {
-        unset($_COOKIE["loggedin"]);
-        unset($_COOKIE["name"]);
         setcookie("loggedin", '', time() - 3600, '/'); 
         setcookie("name", '', time() - 3600, '/'); 
+        session_unset();
+        session_destroy();
         header("Location: login.php");
         exit;
     }
 
-    if(isset($_COOKIE["loggedin"]) && ($_COOKIE["loggedin"]) !== "true") {
+    if(!isset($_COOKIE["loggedin"]) || ($_COOKIE["loggedin"]) !== "true") {
         header("Location: login.php");
         exit;
     }
