@@ -14,10 +14,14 @@
         exit;
     }
 
-    if(!isset($_COOKIE["loggedin"]) || ($_COOKIE["loggedin"]) !== "true") {
+    if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["logout"])) {
+        logout();
+}
+
+    if (!isset($_COOKIE["loggedin"]) || $_COOKIE["loggedin"] !== "true") {
         header("Location: login.php");
         exit;
-    }
+}
 
 ?>
 
@@ -95,11 +99,6 @@
       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <input type="submit" name="logout" value="Sair da conta">
       </form>
-      <?php
-          if(isset($_POST["logout"])) {
-              logout();
-          }
-      ?>
   </div>
 
 <!-- CONTEÚDO AQUI -->
