@@ -3,7 +3,7 @@
         session_start();
     }
 
-    if($_COOKIE["loggedin"] === "true") {
+    if (isset($_COOKIE["loggedin"]) && $_COOKIE["loggedin"] === "true") {
         header("Location: site.php");
         exit;
     }
