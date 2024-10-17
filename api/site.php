@@ -6,8 +6,6 @@
     require_once "configuracoes.php";
 
     function logout() {
-        session_unset();
-        session_destroy();
         unset($_COOKIE["loggedin"]);
         unset($_COOKIE["name"]);
         setcookie("loggedin", '', time() - 3600, '/'); 
