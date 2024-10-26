@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.mensagemErro{
+    font-family: arial;
+    font-size: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: red;
+    height: 100px;
+    width: 100%;
+}
+
+.slideIn {
+    animation: slideIn 0.5s forwards;
+}
+
+/* Keyframes for slide-in effect */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%); /* Start from below */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
