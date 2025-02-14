@@ -1,18 +1,12 @@
 .card{
+    border: 0;
     width: 100%;
     display: flex;
     text-align: center;
 }
 
-.ImgPousada{
-    margin-top: 20px;
-    width: 100%;
-    height: 500px;
-}
-
-.ImgPousada img{
-    width: 1300px;
-    height: 500px;
+#pousadaImagem{
+    width: 100vw;
     object-fit: cover;
 }
 
@@ -24,10 +18,9 @@
     left: 240px;
 }
 
-.card-body{
-    margin: 0 auto;
-    width: 1000px;
-    position: relative;
+.col-md-8{
+    display: flex !important;
+    width: 70vw !important;
 }
 
 .card-text{
@@ -37,8 +30,6 @@
 
 #Local{
     margin-bottom: 100px;
-    left: 0;
-    bottom: 0;
     position: absolute;
     background-color: rgb(255, 255, 255);
     width: fit-content;
@@ -60,10 +51,13 @@
 }
 
 .avaliação{
+    margin-bottom: 5vh;
     text-align: center;
     display: flex;
     justify-content: center;
 }
+
+
 
 .Inclusos{
     width: 100%;
@@ -79,15 +73,21 @@
 
 
 
-
+.sectionQuartos{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: row;
+}
 
 .quartos{
-    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    margin-top: 5vh;
     font-size: large;
-    width: 1400px;
+    width: 80vw;
     height: 450px;
     border: 2px solid gray;
-    display: flex;
     flex-direction: row;
     border-radius: 4px;
     overflow: scroll;
@@ -150,7 +150,6 @@
 }
 
 #avaliçãoInfo{
-    
     bottom: 50px;
     display: flex;
     flex-direction: row;
@@ -162,7 +161,6 @@
     gap: 3px;
     display: flex;
     flex-direction: row;
-    
     top: 50px;
     right: 110px;
     width: fit-content ;
@@ -183,10 +181,7 @@
     flex-direction: column;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#quartos-tittle{
-    margin-top: 50px;
-    font-size: 28px;
-}
 
