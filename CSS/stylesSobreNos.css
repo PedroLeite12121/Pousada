@@ -38,6 +38,7 @@ body{
 }
 
 .paragrafo2{
+    margin-bottom: 40px;
     margin-top: 20px;
     box-shadow: -5px 5px 4px black;
     margin-left: 300px;

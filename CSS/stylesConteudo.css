@@ -40,7 +40,7 @@ body{
 
 .FraseBemVindo h1{
     border-bottom: 8px solid rgb(0, 26, 255);
-    width: 1200px;;
+    width: 1200px;
     text-align: center;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -50,7 +50,6 @@ body{
 
 .FraseEstados {
     background-image: linear-gradient(to left, #8aa5ff, rgb(21, 142, 255));
-    padding: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -59,7 +58,6 @@ body{
     text-align: center;
     width: 100%;
     height: 150px;
-    padding: 20px;
     font-style: italic;
     background-size: cover;
 
@@ -68,8 +66,9 @@ body{
 .Estado1{
     margin-top: 30px !important;
     border-radius: 5px;
-    min-height: 350px;
-    margin: 50px;
+    width: 400px !important;
+    min-height: 400px !important;
+    margin: 3vh;
     border: 1px solid gray;
     padding: 7px;
     transition: 0.5s;
@@ -80,9 +79,13 @@ body{
     transition: 0.5s;
 }
 
+.card-text{
+    margin-top: 20px;
+}
 
 .cards{
-    justify-content: space-evenly;
+    max-width: 100vw;
+    justify-content: center;
     display: flex;
     flex-direction: row;
 }
@@ -130,15 +133,14 @@ body{
 #Local{
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin-top: 2vh;
     font-style: italic;
-    position: relative;
-    left: 70px;
 }
 
 .Preço{
     color: rgb(31, 135, 245);
-    position: relative;
-    left: 100px;
+
+
 }
+
 
