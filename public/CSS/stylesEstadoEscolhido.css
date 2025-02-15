@@ -1,0 +1,149 @@
+
+h2{
+    margin: 0;
+}
+
+.EstadoEscolhido{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+
+
+.Estado1{
+    min-height: 300px;
+    margin: 50px;
+    border: 1px solid gray;
+    padding: 7px;
+    bottom: 700px;
+    left: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+#Local{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-style: italic;
+    right: 15px;
+}
+
+.card{
+    width: 80% !important;
+    height: fit-content;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+.card:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+
+.cards{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ImgPousada img{
+    border-radius: 5px !important;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.card-body{
+    margin-left: 20px;
+}
+
+.ImagemLateral img{
+    height: 100%;
+}
+
+.card-title{
+    width: 300px;
+}
+
+
+#Local{
+    width: 300px;
+}
+
+.direção{
+    display: flex;
+    flex-direction: row;
+}
+
+.Inclusos{
+    display: flex;
+    flex-direction: row;
+    
+    right: 10px;
+}
+
+#incluso1{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    font-style: italic;
+    
+    font-size: small;
+
+}
+
+#incluso2{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-style: italic;
+    
+    font-size: small;
+}
+
+.avaliação{
+    margin-left: 20px;
+    left: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.Preço{
+    margin-bottom: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    color: rgb(31, 135, 245);
+    font-size: 28px;
+    position: absolute;
+    right: 0;
+}
+
+#aval_prec{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,52 @@
+body{
+    background-image: url(../IMG/pousadasobrenos.png);
+    background-size: cover;
+    backdrop-filter: blur(1px);
+}
+
+.img img{
+    width: fit-content;
+}
+
+.img{
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.973);
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafo1, .paragrafo2{
+    border-radius: 15px;
+    padding: 25px;
+    width: 30%;
+    background-color: white;
+}
+
+.paragrafo1 p, .paragrafo2 p {
+    font-size: 20px;
+}
+
+.paragrafo1 h1, .paragrafo2 h1 {
+    font-size: 50px;
+}
+
+
+.paragrafo1{
+    box-shadow: 5px 5px 4px black;
+    margin-right: 300px;
+}
+
+.paragrafo2{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    box-shadow: -5px 5px 4px black;
+    margin-left: 300px;
+}
+
+.paragrafos{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

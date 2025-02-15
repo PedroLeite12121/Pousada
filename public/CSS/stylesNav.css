@@ -1,0 +1,62 @@
+.inNav{
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    margin: 0;
+}
+
+.inNav img{
+    width: 5vh !important;
+    height: 5vh !important;
+}
+
+
+
+.inNav .nav-link{
+    margin: 0;
+}
+
+#logoNav{
+    margin: 0 !important;
+    width: 20vh;
+}
+
+
+.container-fluid{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nav-link{
+    font-size: 18px;
+    transition: 0.5s;
+    margin-left: 50px;
+    font-weight: bolder;
+    color: white !important;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+    font-family: arial;
+    font-weight: bolder;
+}
+
+.bg-body-tertiary{
+    height: 8vh;
+    background-color: #ffc444 !important;
+}
+
+.nav-link.active{
+    font-weight: bolder;
+    color: white !important;
+} 
+
+.nav-link:hover{
+    transition: 0.5s;
+    color: gray !important;
+}
+
+
